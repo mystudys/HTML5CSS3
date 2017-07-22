@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        /*整个页面的设置*/
+        :root {
+            background-color: yellow;
+        }
+
+        /*排除某个元素*/
+        body *:not(h1) {
+            background-color: lightgreen;
+        }
+
+        /*空元素生效*/
+        :empty {
+            background-color: aliceblue;
+        }
+
+        /*点击超链接并跳转后生效*/
+        div[id^=text]:target {
+            background-color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+<table>
+    <tr>
+        <td>11</td>
+        <td>22</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td></td>
+    </tr>
+</table>
+<h1>title</h1>
+<div style="width: 100px;height: 40px;"></div>
+<p>菲律宾总统府发表声明称，杜特尔特指示政府小组，勿恢复与共党叛军的正式和谈，除非他们同意停止攻击民答那峨的政府军。
+
+    此外，菲总统府和平顾问赫苏斯•杜雷萨(Jesus Dureza)表示，18日，杜特尔特另行下令谈判人员，与共党叛军代表于接下来几天在欧洲举行非正式会谈，并且提出相关问题。但杜雷萨稍后宣布，由于拥有4000名成员</p>
+
+<p id="menu">
+    <a href="#text1">选择1</a>
+    <a href="#text2">选择2</a>
+    <a href="#text3">选择3</a>
+    <a href="#tar1">选择3</a>
+    <a href="#tar2">选择3</a>
+</p>
+<div id="text1">
+    菲律宾总统府发表声明称
+</div>
+<div id="text2">
+    平顾问赫苏斯•杜雷萨(Jesu
+</div>
+<div id="text3">
+    军的正式和谈，除非他们同意停
+</div>
+<div id="tar1">
+    军的正式和谈，除非他们同意停
+</div>
+<div id="tar2">
+    军的正式和谈，除非他们同意停
+</div>
+</body>
+
+</html>
