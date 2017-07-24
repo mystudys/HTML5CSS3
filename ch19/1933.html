@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        /*li:first-child{*/
+            /*background-color: red;*/
+        /*}*/
+        /*li:last-child{*/
+            /*background-color: yellow;*/
+        /*}*/
+
+        /*li:nth-child(2){*/
+            /*background-color: red;*/
+        /*}*/
+        /*li:nth-last-child(3){*/
+            /*background-color: yellow;*/
+        /*}*/
+
+        li:nth-child(odd){
+            background-color: yellow;
+        }
+        li:nth-child(even){
+            background-color: red;
+        }
+        span:nth-child(odd){
+            background-color: red;
+        }
+        /*nth-child 是连同父标签的所有子标签一起算在内的*/
+
+    </style>
+</head>
+
+<body>
+<ul>
+    <li>hello world</li>
+    <li>hello world</li>
+    <li>hello world</li>
+    <li>hello world</li>
+    <li>hello world</li>
+    <li>hello world</li>
+</ul>
+<div>
+
+    <span>hello</span>
+</div>
+</body>
+
+</html>
