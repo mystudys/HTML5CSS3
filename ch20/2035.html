@@ -4,26 +4,21 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style type="text/css">
-        h1::before{content: counter(myCounter,upper-roman)}
-        h1{counter-increment: myCounter}
-        h2::before{content: '第'counter(h2c)'章 '}
-        h2{
-            counter-increment:h2c;}
+        h1::before{content: counter(myCounter)'. '}
+        h1{counter-increment: myCounter;counter-reset: h2c}
+        h2::before{content: counter(h2c)'. '}
+        h2{counter-increment:h2c;margin-left: 40px;}
     </style>
 </head>
 
 <body>
 <h1>大标题</h1>
 <h2>小标题</h2>
-<h1>大标题</h1>
+<h2>小标题</h2>
 <h2>小标题</h2>
 <h1>大标题</h1>
 <h2>小标题</h2>
-<h1>大标题</h1>
 <h2>小标题</h2>
-<h1>大标题</h1>
-<h2>小标题</h2>
-<h1>大标题</h1>
 <h2>小标题</h2>
 </body>
 
