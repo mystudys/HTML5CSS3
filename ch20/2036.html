@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        h1::before{content: counter(myCounter)'. '}
+        h1{counter-increment: myCounter;counter-reset: h2c}
+        h2::before{content: counter(myCounter)'-'counter(h2c)'. '}
+        h2{counter-increment:h2c;margin-left: 40px;}
+        /*一级菜单可以和二级菜单链接*/
+    </style>
+</head>
+
+<body>
+<h1>大标题</h1>
+<h2>小标题</h2>
+<h2>小标题</h2>
+<h2>小标题</h2>
+<h1>大标题</h1>
+<h2>小标题</h2>
+<h2>小标题</h2>
+<h2>小标题</h2>
+</body>
+
+</html>
