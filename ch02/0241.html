@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul contenteditable="true">
+    <li id="1">hello world</li>
+    <li id="2" contenteditable="false">hello world</li>
+    <li>hello world</li>
+</ul>
+
+<textarea spellcheck="true"></textarea>
+</body>
+<script>
+    console.log(document.getElementById('1').getAttribute('isContentEditable'))
+</script>
+</html>
