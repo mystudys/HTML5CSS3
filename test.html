@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    console.log('fetch' in window)
+    fetch('https://tmdapi.gochinatv.com/tmdapi/v1/messenger?code=002170',{
+        mode:'cors'
+    }).then(function (res) {
+        console.log(res)
+        return res.json()
+    }).then(function (data) {
+        console.log(data)
+    })
+</script>
+</html>
